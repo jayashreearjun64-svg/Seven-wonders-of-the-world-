@@ -1,1 +1,104 @@
 # Seven-wonders-of-the-world-
+
+HTML (index.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Wonders of the World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Seven Wonders of the World</h1>
+    </header>
+    <div class="wonders-container">
+        <div class="wonder">
+            <h2>The Great Pyramid of Giza</h2>
+            <img src="pyramid.jpg" alt="The Great Pyramid of Giza">
+            <p>Egypt</p>
+            <button class="read-more">Read More</button>
+            <div class="more-info">
+                <p>The Great Pyramid of Giza is the oldest and the only remaining ancient wonder of the original Seven Wonders of the Ancient World.</p>
+            </div>
+        </div>
+        <!-- Repeat the .wonder div for each wonder -->
+        <div class="wonder">
+            <h2>The Great Wall of China</h2>
+            <img src="wall.jpg" alt="The Great Wall of China">
+            <p>China</p>
+            <button class="read-more">Read More</button>
+            <div class="more-info">
+                <p>The Great Wall of China is a series of fortifications built across several Chinese dynasties to protect the country from invasions.</p>
+            </div>
+        </div>
+        <div class="wonder">
+            <h2>Machu Picchu</h2>
+            <img src="machu-picchu.jpg" alt="Machu Picchu">
+            <p>Peru</p>
+            <button class="read-more">Read More</button>
+            <div class="more-info">
+                <p>Machu Picchu is an Incan citadel set high in the Andes Mountains of Peru. It's known for its sophisticated dry-stone walls.</p>
+            </div>
+        </div>
+        <div class="wonder">
+            <h2>Chichén Itzá</h2>
+            <img src="chichen-itza.jpg" alt="Chichén Itzá">
+            <p>Mexico</p>
+            <button class="read-more">Read More</button>
+            <div class="more-info">
+                <p>Chichén Itzá is a pre-Columbian Mayan city on the Yucatán Peninsula in Mexico. It's known for the Pyramid of Kukulkan.</p>
+            </div>
+        </div>
+        <div class="wonder">
+            <h2>The Roman Colosseum</h2>
+            <img src="colosseum.jpg" alt="The Roman Colosseum">
+            <p>Italy</p>
+            <button class="read-more">Read More</button>
+            <div class="more-info">
+                <p>The Roman Colosseum is an amphitheater in Rome, Italy, known for hosting gladiator battles and public spectacles.</p>
+            </div>
+        </div>
+        <div class="wonder">
+            <h2>The Taj Mahal</h2>
+            <img src="taj-mahal.jpg" alt="The Taj Mahal">
+            <p>India</p>
+            <button class="read-more">Read More</button>
+            <div class="more-info">
+                <p>The Taj Mahal is a mausoleum built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal.</p>
+            </div>
+        </div>
+        <div class="wonder">
+            <h2>Christ the Redeemer</h2>
+            <img src="christ.jpg" alt="Christ the Redeemer">
+            <p>Brazil</p>
+            <button class="read-more">Read More</button>
+            <div class="more-info">
+                <p>Christ the Redeemer is a large Art Deco statue of Jesus Christ in Rio de Janeiro, Brazil, symbolizing Christianity.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+CSS (style.css)
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.wonders-container {
+    display: flex;
+    flex-wrap: wrap
