@@ -1,0 +1,45 @@
+
+
+JavaScript (script.js)
+// Get all read more buttons
+const readMoreButtons = document.querySelectorAll('.read-more');
+
+// Add event listener to each button
+readMoreButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Get the parent element of the button (the wonder div)
+        const wonderDiv = button.parentNode;
+        
+        // Get the more-info div within the wonder div
+        const moreInfoDiv = wonderDiv.querySelector('.more-info');
+        
+        // Toggle the visibility of the more-info div
+        moreInfoDiv.classList.toggle('visible');
+        
+        // Change the button text
+        if (moreInfoDiv.classList.contains('visible')) {
+            button.textContent = 'Read Less';
+        } else {
+            button.textContent = 'Read More';
+        }
+    });
+});
+CSS (add to style.css)
+.more-info {
+    display: none;
+}
+
+.more-info.visible {
+    display: block;
+}
+
+This code uses the following techniques:
+
+1. *QuerySelectorAll*: Selects all elements with the class `read-more` and stores them in a NodeList.
+2. *AddEventListener*: Adds a click event listener to each button.
+3. *ParentNode*: Gets the parent element of the button (the wonder div).
+4. *QuerySelector*: Gets the `.more-info` div within the wonder div.
+5. *ClassList*: Toggles the `visible` class on the `.more-info` div.
+6. *TextContent*: Changes the text content of the button.
+
+When a "Read More" button is clicked, the corresponding `.more-info` div is toggled visible, and the button text changes to "Read Less". When the button is clicked again, the `.more-info` div is hidden, and the button text changes back to "Read More".
